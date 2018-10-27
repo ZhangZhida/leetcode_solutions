@@ -22,21 +22,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
 
-public class HashMap_TopKFrequentWords {
 
-    public static void main(String[] args) {
-	// write your code here
-        String[] combo = {"d","a","c","b","d","a","b","b","a","d","d","a","d"};
-        int k = 5;
-
-        Solution solution = new Solution();
-        String[] result = solution.topKFrequent(combo, k);
-        System.out.println(result);
-    }
-
-
-
-}
 
 class Solution {
 
