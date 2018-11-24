@@ -4,6 +4,10 @@ public class Solution {
     // Assumptions: 
     //   1. the input is not null
     //   2. n >= 0;
+    if(input == null || input == "" || n == 0) {
+      return input;
+    }
+
     int left = 0;
     int right = n;
     char[] array = input.toCharArray();
