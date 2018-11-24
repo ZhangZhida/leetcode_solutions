@@ -1,3 +1,7 @@
 # leetcode_solutions
 
-- Questions from LaiCode
+## Java Map/Collection Cheat Sheet
+![alt text](misc/JavaMapCollectionCheatSheet.png)
+
+## Java Collection Hierarchy
+![alt text](misc/JavaCollectionHierarchy.png)
