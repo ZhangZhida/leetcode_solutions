@@ -4,7 +4,7 @@
 public class Solution {
     public int[] rainbowSort(int[] array) {
       // Write your solution here
-      if (array == null || array.length == 0) {
+      if (array == null || array.length == 0) {   
         return array;
       }
       int i = 0; // all elements on the left of i(not included) is -1;
