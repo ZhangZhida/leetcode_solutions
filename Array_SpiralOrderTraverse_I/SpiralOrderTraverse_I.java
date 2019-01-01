@@ -1,7 +1,9 @@
-// method 1
 
 public class Solution {
-    public List<Integer> spiral(int[][] matrix) {
+    /**
+     *  Method 1: traversal direction control
+     */
+    public List<Integer> spiralI(int[][] matrix) {
       // Write your solution here
       int rowNum = matrix.length;
       int colNum = matrix[0].length;
@@ -48,4 +50,38 @@ public class Solution {
         dir[1] = 0;
       }
     }
+
+    /**
+     *  Method 2: recursive 
+     */
+    public List<Integer> spiralII(int[][] matrix) {
+        // Write your solution here
+        List<Integer> result = new ArrayList<>();
+        traverse(matrix, 0, matrix.length, result);
+        return result;
+      }
+      
+      public void traverse(int[][] matrix, int offset, int size, List<Integer> result) {
+        // base case
+        if (size == 0) {
+          return;
+        } 
+        if (size == 1) {
+          result.add(matrix[offset][offset]);
+          return;
+        }
+        for (int i = 0; i < size; i++) {
+          result.add(matrix[offset][offset + i]);
+        }
+        for (int j = 1; j < size; j++) {
+          result.add(matrix[offset + j][offset + size - 1]);
+        }
+        for (int i = size - 2; i >= 0; i--) {
+          result.add(matrix[offset + size - 1][offset + i]);
+        }
+        for (int j = size - 2; j >= 1; j--) {
+          result.add(matrix[offset + j][offset]);
+        }
+        traverse(matrix, offset + 1, size - 2, result);
+      }
   }
