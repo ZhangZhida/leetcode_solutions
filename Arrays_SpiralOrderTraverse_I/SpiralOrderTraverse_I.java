@@ -50,6 +50,7 @@ public class Solution {
         dir[1] = 0;
       }
     }
+    
 
     /**
      *  Method 2: recursive 
