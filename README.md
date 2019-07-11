@@ -8,7 +8,7 @@
 - All classes: https://docs.oracle.com/javase/7/docs/api/allclasses-noframe.html 
 
 ### Java Collection Hierarchy
-![alt text](misc/JavaCollectionHierarchy.png)
+![alt text](2018/misc/JavaCollectionHierarchy.png)
 
 ### Java Map/Collection Cheat Sheet
-![alt text](misc/JavaMapCollectionCheatSheet.png)
+![alt text](2018/misc/JavaMapCollectionCheatSheet.png)
